@@ -26,3 +26,11 @@ vector_store/
 
 # Logs
 *.log
+
+tmp/tmp/
+*.wav
+*.mp3
+*.mp4
+.env
+__pycache__/
+.venv/
