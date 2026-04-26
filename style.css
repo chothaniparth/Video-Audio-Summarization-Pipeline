@@ -1,0 +1,142 @@
+/* AudioMind AI — Custom Streamlit Styles */
+
+/* Hide default Streamlit header/footer */
+#MainMenu {visibility: hidden;}
+footer {visibility: hidden;}
+header {visibility: hidden;}
+
+/* Main container padding */
+.block-container {
+    padding-top: 1rem !important;
+    max-width: 1400px;
+}
+
+/* Transcript line styling */
+.transcript-line {
+    padding: 6px 0;
+    border-bottom: 1px solid #F3F4F6;
+    display: flex;
+    gap: 10px;
+    align-items: flex-start;
+}
+
+.ts-badge {
+    background: #EDE9FE;
+    color: #7C3AED;
+    padding: 2px 8px;
+    border-radius: 12px;
+    font-size: 0.72rem;
+    font-weight: 700;
+    white-space: nowrap;
+    margin-top: 2px;
+    font-family: monospace;
+}
+
+.ts-text {
+    font-size: 0.9rem;
+    color: #374151;
+    line-height: 1.5;
+}
+
+/* Pipeline stage indicators */
+.pipeline-stage {
+    text-align: center;
+    padding: 0.6rem 0.3rem;
+    border-radius: 10px;
+    background: #F3F4F6;
+    color: #9CA3AF;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.pipeline-stage.active {
+    background: #FEF3C7;
+    color: #92400E;
+    border: 2px solid #F59E0B;
+}
+
+.pipeline-stage.done {
+    background: linear-gradient(135deg, #7C3AED, #4F46E5);
+    color: white;
+}
+
+/* File info box */
+.file-info {
+    background: #F0FDF4;
+    border: 1px solid #86EFAC;
+    border-radius: 8px;
+    padding: 10px 14px;
+    font-size: 0.9rem;
+    color: #166534;
+}
+
+/* Sidebar branding */
+.sidebar-logo {
+    text-align: center;
+    padding: 1rem 0;
+}
+
+.logo-icon {
+    font-size: 2.5rem;
+    display: block;
+}
+
+.logo-text {
+    font-size: 1.4rem;
+    font-weight: 800;
+    letter-spacing: -0.5px;
+}
+
+.logo-accent {
+    color: #7C3AED;
+}
+
+/* Metric cards */
+[data-testid="metric-container"] {
+    background: #F9FAFB;
+    border: 1px solid #E5E7EB;
+    border-radius: 12px;
+    padding: 12px 16px;
+}
+
+/* Primary button override */
+.stButton > button[kind="primary"] {
+    background: linear-gradient(135deg, #7C3AED, #4F46E5) !important;
+    border: none !important;
+    border-radius: 10px !important;
+    font-weight: 700 !important;
+    letter-spacing: 0.3px !important;
+    padding: 0.6rem 1.5rem !important;
+    transition: opacity 0.2s !important;
+}
+
+.stButton > button[kind="primary"]:hover {
+    opacity: 0.9 !important;
+    transform: translateY(-1px);
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    color: #9CA3AF;
+    font-size: 0.8rem;
+    padding: 1rem 0;
+}
+
+/* Expander styling */
+.streamlit-expanderHeader {
+    background: #F9FAFB !important;
+    border-radius: 8px !important;
+}
+
+/* Upload area */
+[data-testid="stFileUploader"] {
+    border: 2px dashed #C4B5FD !important;
+    border-radius: 12px !important;
+    background: #FAFAFA !important;
+}
+
+/* Status box */
+[data-testid="stStatus"] {
+    border-radius: 12px !important;
+}
